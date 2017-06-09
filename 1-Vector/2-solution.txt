@@ -1,0 +1,16 @@
+Bài tập 5: Big Segment
+
+Đọc hiểu đề:
+- Cho 1 đường thẳng tọa độ có n đoạn thẳng, mỗi đoạn thẳng được biểu diễn dưới dạng tập hợp [l, r]. Trong đó l là vị trí bắt đầu, và r là vị trí kết thúc của đoạn thẳng.
+- Trong đường thẳng tọa độ sẽ có thể tồn tại 1 đoạn thẳng bao phủ các đoạn thẳng còn lại.
+- Một tập hợp đoạn thẳng [a, b] sẽ được cho là bao phủ đoạn thẳng [c, d] nếu điều kiện sau tồn tại: a ≤ c ≤ d ≤ b.
+- Sẽ không có 2 đoạn thẳng nào trùng nhau.
+
+Hướng giải quyết:
+- Một đoạn thẳng sẽ bao phủ toàn bộ các đoạn còn lại khi 
+  - Điểm bắt đầu của nó luôn <= điểm bắt đầu của những đoạn còn lại
+  - Điểm kết thúc của nó luôn >= điểm kết thúc của những đoạn còn lại.
+- Lấy ra giá trị và vị trí của lmin, rmax trong toàn bộ các tập hợp đoạn thẳng [l, r]
+- So sánh [lmin, rmax] với tập hợp các đoạn thẳng [l, r]
+  - Nếu tập hợp tồn tại 1 tập hợp đoạn thẳng [l, r] == [lmin, rmax], in ra vị trí [lmin, rmax]
+  - Nếu không, in ra -1.

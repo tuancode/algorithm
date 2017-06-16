@@ -8,14 +8,14 @@ using namespace std;
 
 int node, edge;
 vector<int> graph[MAX];
-int path[MAX];
+int back[MAX];
 bool visited[MAX];
 
 void breathFirstSearch(int startNode) {
 	for (int i = 0; i < node; i++) {
-		// init path and visited elements
+		// init back and visited elements
 		visited[i] = false;
-		path[i] = -1;
+		back[i] = -1;
 	}
 	
 	queue<int> queue;
@@ -30,27 +30,27 @@ void breathFirstSearch(int startNode) {
 			if (!visited[*i]) {
 				visited[*i] = true;
 				queue.push(*i);
-				path[*i] = startNode;
+				back[*i] = startNode;
 			}
 		}
 	}
 }
 
-void printPath(int startNode, int targetNode, int path[]) {
+void printPath(int startNode, int targetNode, int back[]) {
 	if (startNode == targetNode) {
 		cout << targetNode << " ";
 	} else {
-		if (path[targetNode] == -1) {
+		if (back[targetNode] == -1) {
 			cout << "Khong co duong di\n";
 		} else {
-			printPath(startNode, path[targetNode], path);
+			printPath(startNode, back[targetNode], back);
 			cout << targetNode << " ";
 		}
 	}
 }
 
 int main() {
-	freopen("input.inp", "rt", stdin);
+	freopen("input.txt", "rt", stdin);
 	int n, e;
 	int startNode = 0, targetNode = 5;
 	
@@ -63,6 +63,6 @@ int main() {
 	}
 	
 	breathFirstSearch(startNode);
-	printPath(startNode, targetNode, path);
+	printPath(startNode, targetNode, back);
 	return 0;
 }

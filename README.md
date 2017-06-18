@@ -1,2 +1,2 @@
 # algorithm
-My algorithm problems for practice.
+My algorithm practices.

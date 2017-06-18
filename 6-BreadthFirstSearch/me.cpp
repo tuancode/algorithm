@@ -50,7 +50,7 @@ void printPath(int startNode, int targetNode, int back[]) {
 }
 
 int main() {
-	freopen("input.txt", "rt", stdin);
+	freopen("me.input.txt", "rt", stdin);
 	int n, e;
 	int startNode = 0, targetNode = 5;
 	

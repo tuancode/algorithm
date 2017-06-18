@@ -46,7 +46,7 @@ void breathFirstSearch(int startNode) {
 }
 
 int main() {
-    freopen("input.inp", "rt", stdin);
+    freopen("me.input.txt", "rt", stdin);
     int q; // number of queries
     int u; // node u
     int v; // node v

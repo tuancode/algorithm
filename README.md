@@ -1,2 +1,2 @@
 # algorithm
-My algorithm implementation by programming language.
+My algorithm practices.

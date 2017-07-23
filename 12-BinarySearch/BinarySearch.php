@@ -3,9 +3,9 @@
 /**
  * Search number from an integer list by applying Binary Search Algorithm.
  *
- * @param int needle   The number to search for
- * @param array haystack The list to search in
- * @return int Position of needle in list if found, otherwise -1.
+ * @param  int   $needle   The number to search for
+ * @param  array $haystack The list to search in
+ * @return int   Position of needle in list if found, otherwise -1.
 */
 function binarySearch(int $needle, array $haystack): int
 {

@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Search value from a list by applying Binary Search Algorithm.
+ * Search number from an integer list by applying Binary Search Algorithm.
  *
- * @param int needle   The value to search for
+ * @param int needle   The number to search for
  * @param array haystack The list to search in
  * @return int Position of needle in list if found, otherwise -1.
 */

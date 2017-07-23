@@ -4,9 +4,9 @@
 using namespace std;
 
 /**
- * Search value from a list by applying Binary Search Algorithm.
+ * Search number from an integer list by applying Binary Search Algorithm.
  *
- * @param needle   The value to search for
+ * @param needle   The number to search for
  * @param haystack The list to search in
  * @return Position of needle in list if found, otherwise -1.
 */

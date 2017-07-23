@@ -5,9 +5,10 @@ using namespace std;
 
 /**
  * Search number from an integer list by applying Binary Search Algorithm.
+ * The list is required sorted.
  *
  * @param  needle   The number to search for
- * @param  haystack The list to search in
+ * @param  haystack The sorted list to search in
  * @return Position of needle in list if found, otherwise -1.
 */
 int binarySearch(int needle, vector<int> haystack) {

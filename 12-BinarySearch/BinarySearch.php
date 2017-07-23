@@ -2,9 +2,10 @@
 
 /**
  * Search number from an integer list by applying Binary Search Algorithm.
+ * The list is required sorted.
  *
  * @param  int   $needle   The number to search for
- * @param  array $haystack The list to search in
+ * @param  array $haystack The sorted list to search in
  * @return int   Position of needle in list if found, otherwise -1.
 */
 function binarySearch(int $needle, array $haystack): int
